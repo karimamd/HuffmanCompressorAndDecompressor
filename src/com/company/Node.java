@@ -5,7 +5,8 @@ public class Node {
     private char letter;
     private Node left;
     private Node right;
-    String code;
+    private String code;
+
     public Node() {
 
     }
@@ -15,7 +16,6 @@ public class Node {
         this.letter = letter;
         this.left = null;
         this.right = null;
-
     }
 
     public Node(Node left, Node right) {
@@ -29,19 +29,16 @@ public class Node {
         this.right = right;
     }
 
-
-
     public Node(int frequency) {
         this.frequency = frequency;
 
     }
 
-    public  int getFrequency() {
+    public int getFrequency() {
         return frequency;
     }
 
     public void setFrequency(int frequency) {
-
         this.frequency = frequency;
     }
 
@@ -67,6 +64,14 @@ public class Node {
 
     public void setRight(Node right) {
         this.right = right;
+    }
+
+    public String getCode(){
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }
 
